@@ -1,0 +1,63 @@
+:root{
+	--main-color: #5d9ab2;
+	--accent-color: #bf6a7a;
+	--dark-color: #2b5566;
+}
+body{
+	background-color: #ddd;
+	color: #000;
+}
+#heading {
+    text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#profile{
+	width: 800px;
+    background: #f7f7f7;
+    text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+}
+#Introduction{
+	width: 700px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+h1{
+	font-size:21.68px;
+	height:22px;
+}
+.Phonetic{
+	font-size:9.85px;
+	height:10px;
+}
+h4{
+	color: #f7f7f7;
+}
+dl {
+  width:700px;
+}
+dt {
+  float:left;
+}
+dd {
+  margin-left:50px;
+}
+a{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: solid 3px currentColor;
+	border-radius: 6px;
+	background-color: #bf6a7a;
+	background-color: ver(--accent-color);
+	color: #FFF;
+	color: ver(--text-bright-color);
+	font-size: 14px;
+	text-decoration: none;
+}
+a:hover{
+	background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
+}
