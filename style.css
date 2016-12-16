@@ -13,6 +13,9 @@ body{
 }
 h2{
 	margin: 0;
+	font-family:  'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', 'Meiryo', sans-serif;
+	font-weight: 300;
+	color: #1E1E1E;
 	text-align: center;
 }
 a{
@@ -44,14 +47,14 @@ a{
 	max-width: 700px;
 } 
 
-.question{
+#question{
 	background-color: #FFF3D9;
 	padding: 20px;
 	margin: 5px 30px 0;
 	font-size: 20px;
 	border-radius: 15px;
 }
-.answer{
+#answer{
 	background-color: #FFF3D9;
 	padding: 20px;
 	margin: 5px 30px 0;

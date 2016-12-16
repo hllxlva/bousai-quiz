@@ -16,10 +16,9 @@
 				<img src="img/quiz.png">
 			</div>
 
-			<div class="question">
+			<div id="question">
 				<h2>問題</h2>
 				<div id="text_q"></div>
-				<h2>選択</h2>
 				<div id="text_s"></div>
 				<script type="text/javascript">
 				//問題と解答
@@ -34,14 +33,12 @@
 				qa[7] = ["ヒトデを英語にするとどれ？","starfish","starshell","starmine",1];
 				qa[8] = ["恒星の中で最も明るい星は？","デネブ","スピカ","シリウス",3];
 				qa[9] = ["惑星の中で最も重たいのはどれ？","太陽","木星","天王星",2];
-
 				//初期設定
-				count = 0; //問題番号
+				var count = Math.floor(Math.random() * qa.length);
+				//count = 0; //問題番号
 				q_sel = 3; //選択肢の数
-
 				//最初の問題
 				quiz();
-
 				//問題表示
 				function quiz() {
 					var s, n;
@@ -58,7 +55,7 @@
 				}
 				</script>
 			</div>
-			<div class="answer" style="display:none">
+			<div id="answer" style="display:none">
 				<h2>解答</h2>
 				<div id="text_a"></div>
 				<script type="text/javascript">
