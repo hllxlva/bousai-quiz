@@ -1,3 +1,4 @@
+
 :root{
 	--main-color: #5d9ab2;
 	--accent-color: #bf6a7a;
@@ -60,4 +61,25 @@ a{
 }
 a:hover{
 	background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
+}
+ .aaaa{
+		width: 80%;
+}
+
+ img{
+	width: 100%;
+	height: auto;
+}
+
+@media(min-width: 768px){
+	/*section {
+		width: 80%;
+		max-width: 1265px;
+	}*/
+	.text_s{
+		display: flex;
+		 align-items: center;
+		 justify-content: center;
+		 font-size: 18px;
+	}
 }

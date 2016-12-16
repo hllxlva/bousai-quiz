@@ -1,22 +1,27 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<title>三択クイズ</title>
+	<title>防災クイズ</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="title"></div>
-	<h1>三択クイズ</h1>
-	<hr>
-	<section class="conA">
-		<h2>問題</h2>
-		<div id="text_q"></div>
-		<h2>選択</h2>
-		<div id="text_s"></div>
-		<h2>解答</h2>
-		<div id="text_a"></div>
-		<script type="text/javascript">
+	<div>
+	<!-- /.防災クイズ -->
+		<section id="heading">
+    		<div class="aaaa"><img src="quiz.png" alt=""></div>
+				
+			
+    	</section>
+		<div id="question">
+			<p><input type="button" value="説明を表示する" style="WIDTH:150px"
+   onClick="document.getElementById('answer').style.display='block';
+            document.getElementById('question').style.display='none'"></p>
+			<h2>問題</h2>
+			<div id="text_q"></div>
+			<h2>選択</h2>
+			<div id="text_s"></div>
+			<script type="text/javascript">
 			//問題と解答
 			qa = new Array();
 			qa[0] = ["イルカを漢字で書くとどれ？","海豚","海牛",	"河豚",1];	
@@ -48,8 +53,19 @@
 					s += "<a href='javascript:anser(" + 	n + ")'>" + n + "：" + qa[count][n] + "</a><br>";
 				}
 				document.getElementById("text_s").innerHTML = s;
+				document.getElementById('answer').style.display='block';
+            	document.getElementById('question').style.display='none'
 			}
-			//解答表示
+			</script>
+		</div>
+		<div id="answer" style="display:none">
+			<p><input type="button" value="説明を隠す" style="WIDTH:150px"
+   onClick="document.getElementById('answer').style.display='none';
+            document.getElementById('question').style.display='block'"></p>
+			<h2>解答</h2>
+			<div id="text_a"></div>
+			<script type="text/javascript">
+			answer();
 			function anser(num) {
 				var s;
 				s = (count + 1) + "問目：";
@@ -65,13 +81,10 @@
 				count++;
 				if (count < qa.length) {
 					quiz();
-				} else {
-					//終了
-					document.getElementById("text_q").innerHTML = "";
-					document.getElementById("text_s").innerHTML = "";
 				}
 			}
 			</script>
-		</section>	
-	</body>
+		</div>
+	</div>	
+</body>
 </html>
