@@ -1,51 +1,16 @@
-
+@charset "UTF-8";
 :root{
 	--main-color: #5d9ab2;
 	--accent-color: #bf6a7a;
 	--dark-color: #2b5566;
 }
 body{
-	background-color: #ddd;
-	color: #000;
-}
-#heading {
-    text-align:center;
-	margin-left:auto;
-	margin-right:auto;
-}
-#profile{
-	width: 800px;
-    background: #f7f7f7;
-    text-align:left;
-	margin-left:auto;
-	margin-right:auto;
-}
-#Introduction{
-	width: 700px;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:left;
-}
-h1{
-	font-size:21.68px;
-	height:22px;
-}
-.Phonetic{
-	font-size:9.85px;
-	height:10px;
-}
-h4{
-	color: #f7f7f7;
-}
-dl {
-  width:700px;
-}
-dt {
-  float:left;
-}
-dd {
-  margin-left:50px;
-}
+	margin: 0;
+	padding: 0;
+	font-family:  'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', 'Meiryo', sans-serif;
+	font-weight: 300;
+	color: #1E1E1E;
+	}
 a{
 	display: inline-block;
 	margin-top: 20px;
@@ -59,27 +24,33 @@ a{
 	font-size: 14px;
 	text-decoration: none;
 }
-a:hover{
-	background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
-}
- .aaaa{
-		width: 80%;
+.container{
+	background-color: #385723;
+	padding-top: 15px;
+	padding-bottom: 50px; 
 }
 
- img{
+.title{
 	width: 100%;
-	height: auto;
+	text-align: center;
 }
 
-@media(min-width: 768px){
-	/*section {
-		width: 80%;
-		max-width: 1265px;
-	}*/
-	.text_s{
-		display: flex;
-		 align-items: center;
-		 justify-content: center;
-		 font-size: 18px;
-	}
+.title img{
+	width: 90%;
+	max-width: 700px;
+} 
+
+.question{
+	background-color: #FFF3D9;
+	padding: 20px;
+	margin: 5px 30px 0;
+	font-size: 20px;
+	border-radius: 15px;
+}
+.answer{
+	background-color: #FFF3D9;
+	padding: 20px;
+	margin: 5px 30px 0;
+	font-size: 20px;
+	border-radius: 15px;
 }
