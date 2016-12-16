@@ -10,7 +10,11 @@ body{
 	font-family:  'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', 'Meiryo', sans-serif;
 	font-weight: 300;
 	color: #1E1E1E;
-	}
+}
+h2{
+	margin: 0;
+	text-align: center;
+}
 a{
 	display: inline-block;
 	margin-top: 20px;
@@ -53,4 +57,10 @@ a{
 	margin: 5px 30px 0;
 	font-size: 20px;
 	border-radius: 15px;
+}
+#text_q{
+	text-align: center;
+}
+#text_s{
+	text-align: center;
 }
