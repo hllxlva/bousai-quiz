@@ -17,7 +17,6 @@
 			</div>
 
 			<div id="question">
-				<h2>問題</h2>
 				<div id="text_q"></div>
 				<div id="text_s"></div>
 				<script type="text/javascript">
@@ -50,6 +49,7 @@
 				qa[24] = ["水の入ったバケツを楽に運べるのは次のうちどれ？","両手で持つ","頭にのせる","両手に一つずつ持つ","3","両手に一つずつバケツを持つことで体のバランスがとりやすく、歩きやすくなる。"];
 				qa[25] = ["懐中電灯にバンドのついたヘッドランプがおすすめされる理由は？","第三の目を使っている気分になれる","両手が使える","周りから目立つ","2","あたりを照らしながら両手に物を持たずに作業をすることができる。"];
 				qa[26] = ["建物倒壊に巻き込まれた。救助を求める際とる行動として正しいのは次のうちどれ？","近くにあった懐中電灯を点滅させる","むやみやたらに声をあげる","静かに救助を待つ","1","むやみに声をあげてしまうと無駄な体力を消費してしまい生存率が下がってしまう。もちろん人の気配を感じたら救助を求める声をあげましょう。近くに懐中電灯がなければ連続的に物音をたてるなどしましょう。"];
+				qa[27] = ["もう一度読み込んでください…","","","","1",""];
 
 				//初期設定
 				var count = Math.floor(Math.random() * qa.length);
@@ -65,7 +65,7 @@
 					//選択肢
 					s = "";
 					for (n=1;n<=q_sel;n++) {
-						s += "<a href='javascript:anser(" + 	n + ")'>" + n + "：" + qa[count][n] + "</a><br>";
+						s += "<a href='javascript:anser(" + 	n + ")'>" + n + "：" + qa[count][n] + "</a>";
 					}
 					document.getElementById("text_s").innerHTML = s;
 					document.getElementById('answer').style.display='block';
@@ -74,7 +74,6 @@
 				</script>
 			</div>
 			<div id="answer" style="display:none">
-				<h2>解答</h2>
 				<div id="text_qu"></div>
 				<div id="text_a"></div>
 				<div id="text_an"></div>
@@ -86,7 +85,7 @@
 					//問題
 					document.getElementById("text_qu").innerHTML = qa[count][0];
 					//解説
-					document.getElementById("text_e").innerHTML = qa[count][5];
+					document.getElementById("text_e").innerHTML = "<br>" + qa[count][5];
 					//答え
 					n = qa[count][4];
 					document.getElementById("text_an").innerHTML = "正解は「" + qa[count][n] + "」";
