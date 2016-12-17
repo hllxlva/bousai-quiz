@@ -30,6 +30,7 @@ a{
 	color: ver(--text-bright-color);
 	font-size: 14px;
 	text-decoration: none;
+	text-align: left;
 }
 .container{
 	background-color: #385723;
@@ -61,9 +62,11 @@ a{
 	font-size: 20px;
 	border-radius: 15px;
 }
-#text_q{
-	text-align: center;
-}
 #text_s{
 	text-align: center;
+}
+#text_a{
+	text-align: center;
+	font-size: 50px;
+	font-weight: 300;
 }
