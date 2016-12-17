@@ -52,6 +52,7 @@ a{
 	margin: 5px 30px 0;
 	font-size: 20px;
 	border-radius: 15px;
+	margin-bottom: 50px;
 }
 #answer{
 	background-color: #FFF3D9;
@@ -59,6 +60,7 @@ a{
 	margin: 5px 30px 0;
 	font-size: 20px;
 	border-radius: 15px;
+	margin-bottom: 50px;
 }
 #text_s{
 	text-align: center;
