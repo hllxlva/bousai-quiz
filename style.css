@@ -26,7 +26,7 @@ a{
 	border-radius: 10px;
 	background-color: hsl(70,74%,34%);
 	background-color: ver(--accent-color);
-	color: #FFF;
+	color: #FFF3D9;
 	color: ver(--text-bright-color);
 	text-decoration: none;
 	text-align: left;
